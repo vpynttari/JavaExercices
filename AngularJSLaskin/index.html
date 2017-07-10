@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="CalculatorApp" ng-controller="CalculatorController">
+
+<head>
+  <title>Angular nelilaskin</title>
+  <script data-require="angular.js@1.4.0-rc.1" data-semver="1.4.0-rc.1" src="https://code.angularjs.org/1.4.0-rc.1/angular.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="main">
+    <h2>Syötä luvut ja valitse tehtävä operaatio</h2>
+    <p>Luku 1: 
+      <input type="number" ng-model="a" ng-init="a=0" ng-change="showOperation = false">
+    </p>
+    <p>Luku 2: 
+      <input type="number" ng-model="b" ng-init="b=0" ng-change="showOperation = false">
+    </p>
+  </div>
+
+  <button ng-click="plus()">+</button>
+  <button ng-click="minus()">-</button>
+  <button ng-click="multiply()">*</button>
+  <button ng-click="divide()">/</button>
+  <button id="nollaus" ng-click="clear()" ng-hide="ans === 0">Nollaus</button>
+
+  <br>
+  <div ng-hide="!showOperation" id="result">
+    <p>Lopputulos laskutoimituksesta {{ a }} {{ operator }} {{ b }} on {{ ans }} </p>
+  </div>
+
+</body>
+</html>

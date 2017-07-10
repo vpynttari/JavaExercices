@@ -1,0 +1,10 @@
+body {
+    background: lightgray;
+}
+
+#result {
+    display:inline-block;
+    background-color: white;
+    margin-top: 10px;
+    padding:0 1em 0 1em;
+}
