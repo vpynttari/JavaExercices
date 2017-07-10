@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% if(locals.etunimi) { %>
+      <h1>Moro <%= etunimi %></h1>
+      <p>Uusin sankarisi on näemmä <%= sankari %></p>
+      <p>Tässä testaillaan ejs-templatea (supersankariEJ.ejs)</p>
+    <% } %>
+    <br>
+    <a href="http://localhost:3000/vastaukset"> Tsekkaa db:n sisältö täältä</a>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<a href="http://localhost:3000/2_supersankariForm_jq.html"> Palaa etusivulle</a>
+
+<h1>Tietokannan sisältö</h1>
+
+<ul>
+  <% for(var i=0; i<vastaukset.length; i++) { %>
+    <li><%= vastaukset[i].nimi %> vastasi
+        että <%= vastaukset[i].supersankari %></li>
+  <% } %>
+</ul>
+
+

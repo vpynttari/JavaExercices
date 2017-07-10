@@ -1,0 +1,25 @@
+body {
+	font-family: 'Catamaran';
+}
+
+#h1oma {
+	background: rgb(144, 81, 140);
+	color: white;
+}
+
+h2 {
+	color: green;
+}
+
+#valinnat {
+	font-weight: bold;
+}
+
+form {
+	padding: 20px;
+	border: 5px rgb(144, 81, 140) solid;
+}
+
+#palaute {
+	padding-top: 15px;
+}
